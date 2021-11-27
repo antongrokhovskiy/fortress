@@ -1,0 +1,16 @@
+{
+  "name": "fortress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
