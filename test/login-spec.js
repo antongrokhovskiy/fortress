@@ -5,8 +5,10 @@ const LoginApi = require('../api/login/login-api');
 // Importing login credentials
 const data = require('../data/credentials.json');
 
-// Our 'describe' statement (test suite) consists of individual 'it' statements (test cases) 
+// Our 'describe' statement (test suite) consists of individual 'it' statements (test cases)$
 describe('Login Page', async function () {
+  this.timeout(250000);
+
   it('should be able to login, verify status code and receive an authentication token', async function () {
     // Passing valid login credentials
     const login = await LoginApi.login(data.validLogin.username, data.validLogin.password)
